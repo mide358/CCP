@@ -1,13 +1,198 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  /* scroll-behavior: auto; */
+  font-family: "Quicksand";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-link {
+  padding: 0 10px;
+}
+.all-link {
+  margin: auto;
+}
+#link {
+  color: #fffffe;
+}
+
+.login_page {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem auto;
+}
+.login_group_btn {
+  margin: 5rem auto;
+}
+
+.signup_page {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+/* search page */
+.find_list {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+  height: 100%;
+}
+/* forgot password */
+.forgot {
+  padding: 20px;
+  margin: auto;
+}
+.forgot h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.forgot input {
+  width: 60%;
+  margin: auto;
+}
+
+/* all users display */
+.all {
+  margin-top: 6rem;
+}
+
+.allusers {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+}
+.all h1 {
+  text-align: center;
+}
+
+.find_list {
+  justify-content: center;
+}
+/* add user */
+.add {
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+  height: 100%;
+}
+
+.home_page {
+  margin-top: 6rem;
+
+  text-align: center;
+}
+.logout_btn {
+  padding: 10px 50px;
+}
+.logout {
+  margin: 5rem auto;
+}
+.get {
+  text-align: center;
+  margin: 7rem auto;
+}
+
+/* invalid input styling */
+input:invalid:required {
+  border: 2px solid green;
+}
+
+/* Media styling for smaller screens */
+@media only screen and (max-width: 767px) {
+  #link {
+    font-size: 0.8rem;
+  }
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+  .navbar-toggler {
+    padding: 4px;
+    background-color: white;
+  }
+
+  .login_page {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+  .login_page h1 {
+    font-size: 1.5rem;
+  }
+  .signup_page {
+    padding: 20px;
+  }
+  .signup_page form {
+    z-index: 90000;
+  }
+  .signup_page h1 {
+    font-size: 1.5rem;
+  }
+  .login_btn {
+    width: 100%;
+    /* justify-content: center; */
+  }
+
+  .find_list {
+    margin-top: 5rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .find_list h1 {
+    font-size: 1.5rem;
+  }
+  .all {
+    margin-top: 5rem;
+  }
+  .all h1 {
+    font-size: 1.5rem;
+  }
+  .all_card {
+    max-width: 15rem !important;
+    /* max-height: 15rem !important; */
+  }
+  .all_card h6,
+  p {
+    font-size: 0.8rem !important;
+  }
+  .del-btn {
+    font-size: 0.7rem !important;
+  }
+
+  .add {
+    margin-top: 5rem;
+    width: 80%;
+  }
+
+  .add h1 {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.4rem !important;
+  }
+
+  .home_page h1 {
+    font-size: 1.5rem;
+  }
+  .logout_btn {
+    font-size: 0.8rem;
+  }
 }
